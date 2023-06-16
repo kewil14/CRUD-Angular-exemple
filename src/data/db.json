@@ -1,0 +1,72 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "computer",
+      "price": 95000,
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "printer",
+      "price": 150000,
+      "checked": true
+    },
+    {
+      "id": 3,
+      "name": "phone",
+      "price": 45000,
+      "checked": true
+    },
+    {
+      "id": 4,
+      "name": "computer",
+      "price": 95000,
+      "checked": true
+    },
+    {
+      "id": 5,
+      "name": "printer",
+      "price": 150000,
+      "checked": true
+    },
+    {
+      "id": 6,
+      "name": "phone",
+      "price": 45000,
+      "checked": true
+    },
+    {
+      "id": 7,
+      "name": "phone",
+      "price": 45000,
+      "checked": true
+    },
+    {
+      "id": 8,
+      "name": "souris",
+      "price": 1000,
+      "checked": false
+    },
+    {
+      "id": 9,
+      "name": "clavier",
+      "price": 1000,
+      "checked": true
+    },
+    {
+      "product": {
+        "name": "usb-key",
+        "price": 5000,
+        "checked": false
+      },
+      "id": 10
+    },
+    {
+      "name": "watch",
+      "price": 11000,
+      "checked": true,
+      "id": 11
+    }
+  ]
+}

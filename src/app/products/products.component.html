@@ -1,0 +1,36 @@
+<div class="p-2">
+<div class="card mb-3 bg-success" >
+  <div class="card-body">
+    <h3>Product</h3>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-body">
+      {{keyword}}
+      <input type="text" [(ngModel)]="keyword" class="p-1">
+      <button (click)="searchProduct()" class="btn btn-outline-success ms-1">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+    <table class="table">
+      <thead>
+          <tr>
+            <th>name</th>
+            <th>price</th>
+            <th>checked</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let product of products$ | async">
+            <td> {{product.name}} </td>
+            <td>{{product.price}}</td>
+            <td><button (click)="handleCheckProduct(product)" class="btn btn-outline-success">
+              <i [ngClass]="product.checked? 'bi bi-check' : 'bi bi-x'"></i>
+            </button></td>
+            <td><button (click)="deleteProduct(product)" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
